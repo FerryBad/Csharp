@@ -1,37 +1,53 @@
-# 🐻 C# Buddy
+# 🐻 C# Buddy — Learn C# by Levels
 
-C# Buddy is a beginner-friendly, step-by-step C# learning website.
+A beginner-friendly C# learning website designed like a small learning game.
 
-## Run locally
+## Course structure
 
-Just open `index.html` in your browser. There is no build step and no server required.
+The course starts extremely easy and unlocks one level at a time:
 
-## Put it on GitHub Pages
+1. **Say Hello** — your first `Console.WriteLine`
+2. **Change the Message** — print different text
+3. **Your First Variable** — store text in a `string`
+4. **Numbers** — use `int`
+5. **Ask the User** — read input
+6. **Make a Decision** — `if` / `else`
+7. **Repeat With a Loop** — `for`
+8. **Build a Method** — methods and parameters
+9. **Collections** — arrays and `foreach`
+10. **Classes** — your first object blueprint
+11. **Handle Errors** — `try` / `catch`
+12. **Final Project** — number guessing game
 
-1. Create a new GitHub repository, for example `csharp-buddy`.
-2. Upload **all four files** from this folder:
-   - `index.html`
-   - `style.css`
-   - `script.js`
-   - `mascot.png`
-3. Commit the files to the `main` branch.
-4. On GitHub, open **Settings → Pages**.
-5. Under **Build and deployment**, choose **Deploy from a branch**.
-6. Select **main** and **/ (root)**, then click **Save**.
-7. GitHub will give you a public website URL after deployment finishes.
+Every level includes:
+- a simple goal
+- step-by-step instructions
+- a worked example
+- one small exercise
+- a hint
+- an answer checker
+- level unlocking/progression
 
-## Features
+## GitHub Pages structure
 
-- C# lessons from beginner to mini-projects
-- Step-by-step explanations
-- Interactive code exercises
-- Browser-side answer checking
-- Progress saved with localStorage
-- Search lessons
-- Light/dark mode
-- Responsive mobile layout
-- C# Buddy teddy-bear mascot
+Put these files directly in the repository root:
+
+```text
+csharp-buddy/
+├── index.html
+├── style.css
+├── script.js
+├── mascot.png
+├── .nojekyll
+└── README.md
+```
+
+Then enable GitHub Pages:
+
+**Settings → Pages → Deploy from a branch → main → / (root) → Save**
 
 ## Important
 
-The exercise checker validates the structure of the answer in JavaScript; it does not compile C# in the browser. To actually run C# code, use .NET/Visual Studio/VS Code or connect the site to a server-side execution service.
+The exercise checker is a browser-side learning aid. It checks whether the submitted code contains the expected structure; it does not compile or execute arbitrary C# in the browser.
+
+For real C# execution, use the .NET SDK/Visual Studio/VS Code or connect this frontend to a secure code-execution backend later.
