@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="C# Buddy — a friendly, step-by-step C# course for beginners.">
+  <meta name="theme-color" content="#111a32">
+  <title>C# Buddy — Learn C# Step by Step</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#" aria-label="C# Buddy home"><span class="bear-mini">🐻</span><strong><span>C#</span> Buddy</strong></a>
+  <div class="search"><span>⌕</span><input id="search" placeholder="Search lessons..." aria-label="Search lessons"></div>
+  <div class="top-right"><span class="progress-label">Your Progress</span><div class="top-progress"><i id="topProgress"></i></div><b id="percent">0%</b><button id="theme" class="icon-btn" aria-label="Toggle theme">☾</button><span class="avatar">🐻</span><span class="learner">Learner⌄</span></div>
+</header>
+
+<div class="layout">
+<aside class="sidebar">
+  <nav class="main-nav">
+    <button class="home-btn" id="homeBtn">⌂ <span>Home</span></button>
+    <h3>C# Lessons</h3>
+    <div id="lessonNav"></div>
+    <h3 class="more">Practice</h3>
+    <button id="practiceBtn" class="side-link">⌘ <span>Coding Exercises</span></button>
+    <button id="projectBtn" class="side-link">🎮 <span>Project: Guessing Game</span></button>
+    <h3 class="more">More</h3>
+    <button class="side-link">▱ <span>Resources</span></button>
+    <button class="side-link">⚙ <span>Settings</span></button>
+  </nav>
+  <div class="sidebar-buddy"><img src="mascot.png" alt="C# Buddy teddy bear"><div><b>You got this!</b><small>Small steps lead to big things! ♥</small></div></div>
+</aside>
+
+<main id="main">
+  <section id="lesson"></section>
+</main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
