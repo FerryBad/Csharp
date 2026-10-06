@@ -1,49 +1,167 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="C# Buddy — learn C# from absolute beginner to mini projects, one level at a time.">
-  <title>C# Buddy — C# Levels</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<header class="topbar">
-  <a class="brand" href="#"><span class="bear-mini">🐻</span><strong><span>C#</span> Buddy</strong></a>
-  <div class="search"><span>⌕</span><input id="search" placeholder="Search levels..." aria-label="Search levels"></div>
-  <div class="top-right">
-    <span class="progress-label">Course Progress</span>
-    <div class="top-progress"><i id="topProgress"></i></div>
-    <b id="percent">0%</b>
-    <button id="theme" class="icon-btn" aria-label="Toggle dark mode">☾</button>
-    <span class="avatar">🐻</span><span class="learner">Learner</span>
-  </div>
-</header>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>C# Buddy — Learn C# Step by Step</title><link rel="stylesheet" href="style.css"></head><body><header class="topbar"><a class="brand" href="#"><span class="bear">🐻</span><b><i>C#</i> Buddy</b></a><label class="search">⌕ <input id="search" placeholder="Search levels..." aria-label="Search levels"></label><div class="top-right"><span>Your Progress</span><div class="top-progress"><i id="topProgress"></i></div><b id="percent">0%</b><button id="theme" class="icon-btn">☾</button><span>🐻</span><span>Learner</span></div></header><div class="layout"><aside class="sidebar"><button id="homeBtn" class="side-home">⌂ <span>Home</span></button><h3>C# LEVELS</h3><div id="levelNav"><button class="level-link active" data-level="0"><span class="level-num">1</span><span>Level 1: Say Hello</span></button><button class="level-link locked" data-level="1"><span class="level-num">2</span><span>Level 2: Change the Message</span></button><button class="level-link locked" data-level="2"><span class="level-num">3</span><span>Level 3: Your First Variable</span></button><button class="level-link locked" data-level="3"><span class="level-num">4</span><span>Level 4: Numbers</span></button><button class="level-link locked" data-level="4"><span class="level-num">5</span><span>Level 5: Ask the User</span></button><button class="level-link locked" data-level="5"><span class="level-num">6</span><span>Level 6: Make a Decision</span></button><button class="level-link locked" data-level="6"><span class="level-num">7</span><span>Level 7: Repeat With a Loop</span></button><button class="level-link locked" data-level="7"><span class="level-num">8</span><span>Level 8: Build a Method</span></button><button class="level-link locked" data-level="8"><span class="level-num">9</span><span>Level 9: Collections</span></button><button class="level-link locked" data-level="9"><span class="level-num">10</span><span>Level 10: Classes</span></button><button class="level-link locked" data-level="10"><span class="level-num">11</span><span>Level 11: Handle Errors</span></button><button class="level-link locked" data-level="11"><span class="level-num">12</span><span>Level 12: Final Project</span></button></div><h3>LEARN</h3><button id="practiceBtn" class="side-link">⌘ <span>Practice</span></button><h3>MORE</h3><button id="resetBtn" class="side-link">↻ <span>Reset Progress</span></button><div class="sidebar-buddy"><img src="mascot.png" alt="C# Buddy"><div><b id="buddyText">You got this!</b><small>Small steps lead to big things! ♥</small></div></div></aside><main><section id="home"><section class="hero"><div class="hero-art"><img src="mascot.png" alt="C# Buddy"></div><div class="hero-copy"><span class="pill">🐻 BEGINNER C# COURSE</span><h1>Learn C# <span>one level at a time.</span></h1><p>Start from zero. Every level teaches one small idea, gives you a worked example, and lets you practice it.</p><div class="chips"><span class="chip">🌱 Start easy</span><span class="chip">📖 Instructions</span><span class="chip">🧩 Exercises</span><span class="chip">🏆 Final project</span></div></div></section><section class="course-card"><div class="course-heading"><div><h2>Your C# adventure</h2><p>Level 1 is ready. Finish it to unlock Level 2.</p></div><strong id="progressText">0 of 12 complete</strong></div><div class="bar"><i id="homeProgress"></i></div><div id="levelCards" class="level-grid"><button class="level-card " data-level="0" ><span class="num">1</span><span><strong>Level 1 — Say Hello</strong><small>Your first C# instruction — Make the computer display a message.</small></span><b>Start →</b></button><button class="level-card locked" data-level="1" disabled><span class="num">2</span><span><strong>Level 2 — Change the Message</strong><small>Print your own text — Change the message so C# prints something new.</small></span><b>🔒</b></button><button class="level-card locked" data-level="2" disabled><span class="num">3</span><span><strong>Level 3 — Your First Variable</strong><small>Store text in memory — Create a string variable called name.</small></span><b>🔒</b></button><button class="level-card locked" data-level="3" disabled><span class="num">4</span><span><strong>Level 4 — Numbers</strong><small>Store whole numbers — Create an integer variable called score with the value 100.</small></span><b>🔒</b></button><button class="level-card locked" data-level="4" disabled><span class="num">5</span><span><strong>Level 5 — Ask the User</strong><small>Read keyboard input — Ask for a name and store the answer.</small></span><b>🔒</b></button><button class="level-card locked" data-level="5" disabled><span class="num">6</span><span><strong>Level 6 — Make a Decision</strong><small>Use if and else — Tell the user whether a score is high or low.</small></span><b>🔒</b></button><button class="level-card locked" data-level="6" disabled><span class="num">7</span><span><strong>Level 7 — Repeat With a Loop</strong><small>Repeat code five times — Print the numbers 1 through 5 using a for loop.</small></span><b>🔒</b></button><button class="level-card locked" data-level="7" disabled><span class="num">8</span><span><strong>Level 8 — Build a Method</strong><small>Create reusable code — Create a method named Greet that accepts a name.</small></span><b>🔒</b></button><button class="level-card locked" data-level="8" disabled><span class="num">9</span><span><strong>Level 9 — Collections</strong><small>Store several values — Create an array containing Red, Green, and Blue.</small></span><b>🔒</b></button><button class="level-card locked" data-level="9" disabled><span class="num">10</span><span><strong>Level 10 — Classes</strong><small>Make an object blueprint — Create a Player class with a Name property.</small></span><b>🔒</b></button><button class="level-card locked" data-level="10" disabled><span class="num">11</span><span><strong>Level 11 — Handle Errors</strong><small>Use try and catch — Handle invalid number input with try/catch.</small></span><b>🔒</b></button><button class="level-card locked" data-level="11" disabled><span class="num">12</span><span><strong>Level 12 — Final Project</strong><small>Build a guessing game — Combine variables, input, a loop, and if/else into a number guessing game.</small></span><b>🔒</b></button></div></section></section><section class="lesson" id="lesson-0" hidden>
+      <section class="hero compact"><div class="hero-art"><img src="mascot.png" alt="C# Buddy teddy bear"></div><div class="hero-copy"><span class="pill">LEVEL 1 OF 12</span><h1>Say Hello</h1><p>Make the computer display a message.</p><div class="chips"><span class="chip">🌱 Beginner friendly</span><span class="chip">📖 Learn</span><span class="chip">🧩 Practice</span></div></div></section>
+      <div class="lesson-grid"><article class="card lesson-card"><div class="lesson-title"><span>1</span><div><h2>Your first C# instruction</h2><p>Follow the steps, study the example, then complete the small challenge.</p></div></div>
+      <div class="buddy-tip"><img src="mascot.png" alt=""><div><b>🐻 C# Buddy says:</b><br>Read one step at a time. You do not need to memorize everything.</div></div>
+      <h3>1. Learn the idea</h3><div class="steps"><div class="step"><b>1</b><span>C# programs are made from instructions.</span></div><div class="step"><b>2</b><span>Console.WriteLine displays text.</span></div><div class="step"><b>3</b><span>Text goes inside double quotes.</span></div><div class="step"><b>4</b><span>A semicolon ; ends the instruction.</span></div></div>
+      <h3>2. Worked example</h3><p class="muted">Here is a finished example.</p><div class="code-wrap"><button class="copy" data-copy="0">Copy</button><pre>Console.WriteLine(&quot;Hello, C# Buddy!&quot;);</pre></div>
+      <h3>3. Your challenge</h3><p class="muted">Write the code described below.</p><div class="challenge"><b>🎯 Your task:</b> Make the computer display a message.</div><textarea id="answer-0" spellcheck="false">Console.WriteLine(&quot;Hello, C#!&quot;);</textarea><div class="actions"><button class="primary check" data-level="0">✓ Check my code</button><button class="secondary hintBtn" data-level="0">💡 Show hint</button></div><div class="feedback" id="feedback-0"></div><div class="hint" id="hint-0">💡 Start with Console.WriteLine(&quot;Hello, C#!&quot;);</div></article>
+      <aside><div class="card"><h3>🎯 Level goal</h3><p>Make the computer display a message.</p><div class="mini-bar"><i></i></div></div><div class="card"><h3>📚 You will learn</h3><ul><li>C# programs are made from instructions.</li><li>Console.WriteLine displays text.</li><li>Text goes inside double quotes.</li><li>A semicolon ; ends the instruction.</li></ul></div><div class="card"><h3>🐻 C# Buddy</h3><img class="big-bear" src="mascot.png" alt="C# Buddy"><p>Complete the exercise to unlock Level 2.</p></div></aside></div>
+      <div class="lesson-nav"><button class="secondary back">← All levels</button><button class="primary next" data-level="0">Next level →</button></div></section><section class="lesson" id="lesson-1" hidden>
+      <section class="hero compact"><div class="hero-art"><img src="mascot.png" alt="C# Buddy teddy bear"></div><div class="hero-copy"><span class="pill">LEVEL 2 OF 12</span><h1>Change the Message</h1><p>Change the message so C# prints something new.</p><div class="chips"><span class="chip">🌱 Beginner friendly</span><span class="chip">📖 Learn</span><span class="chip">🧩 Practice</span></div></div></section>
+      <div class="lesson-grid"><article class="card lesson-card"><div class="lesson-title"><span>2</span><div><h2>Print your own text</h2><p>Follow the steps, study the example, then complete the small challenge.</p></div></div>
+      <div class="buddy-tip"><img src="mascot.png" alt=""><div><b>🐻 C# Buddy says:</b><br>Read one step at a time. You do not need to memorize everything.</div></div>
+      <h3>1. Learn the idea</h3><div class="steps"><div class="step"><b>1</b><span>Keep Console.WriteLine the same.</span></div><div class="step"><b>2</b><span>Only the text between quotation marks needs to change.</span></div><div class="step"><b>3</b><span>Your message can be anything you want.</span></div><div class="step"><b>4</b><span>Remember the semicolon.</span></div></div>
+      <h3>2. Worked example</h3><p class="muted">Here is a finished example.</p><div class="code-wrap"><button class="copy" data-copy="1">Copy</button><pre>Console.WriteLine(&quot;I am learning C#!&quot;);</pre></div>
+      <h3>3. Your challenge</h3><p class="muted">Write the code described below.</p><div class="challenge"><b>🎯 Your task:</b> Change the message so C# prints something new.</div><textarea id="answer-1" spellcheck="false">Console.WriteLine(&quot;I love coding!&quot;);</textarea><div class="actions"><button class="primary check" data-level="1">✓ Check my code</button><button class="secondary hintBtn" data-level="1">💡 Show hint</button></div><div class="feedback" id="feedback-1"></div><div class="hint" id="hint-1">💡 Replace the words inside the quotes with I love coding!</div></article>
+      <aside><div class="card"><h3>🎯 Level goal</h3><p>Change the message so C# prints something new.</p><div class="mini-bar"><i></i></div></div><div class="card"><h3>📚 You will learn</h3><ul><li>Keep Console.WriteLine the same.</li><li>Only the text between quotation marks needs to change.</li><li>Your message can be anything you want.</li><li>Remember the semicolon.</li></ul></div><div class="card"><h3>🐻 C# Buddy</h3><img class="big-bear" src="mascot.png" alt="C# Buddy"><p>Complete the exercise to unlock Level 3.</p></div></aside></div>
+      <div class="lesson-nav"><button class="secondary back">← All levels</button><button class="primary next" data-level="1">Next level →</button></div></section><section class="lesson" id="lesson-2" hidden>
+      <section class="hero compact"><div class="hero-art"><img src="mascot.png" alt="C# Buddy teddy bear"></div><div class="hero-copy"><span class="pill">LEVEL 3 OF 12</span><h1>Your First Variable</h1><p>Create a string variable called name.</p><div class="chips"><span class="chip">🌱 Beginner friendly</span><span class="chip">📖 Learn</span><span class="chip">🧩 Practice</span></div></div></section>
+      <div class="lesson-grid"><article class="card lesson-card"><div class="lesson-title"><span>3</span><div><h2>Store text in memory</h2><p>Follow the steps, study the example, then complete the small challenge.</p></div></div>
+      <div class="buddy-tip"><img src="mascot.png" alt=""><div><b>🐻 C# Buddy says:</b><br>Read one step at a time. You do not need to memorize everything.</div></div>
+      <h3>1. Learn the idea</h3><div class="steps"><div class="step"><b>1</b><span>A variable is a named place for a value.</span></div><div class="step"><b>2</b><span>string means the value is text.</span></div><div class="step"><b>3</b><span>name is the variable name.</span></div><div class="step"><b>4</b><span>= assigns the text to the variable.</span></div></div>
+      <h3>2. Worked example</h3><p class="muted">Here is a finished example.</p><div class="code-wrap"><button class="copy" data-copy="2">Copy</button><pre>string name = &quot;Alex&quot;;
+Console.WriteLine(name);</pre></div>
+      <h3>3. Your challenge</h3><p class="muted">Write the code described below.</p><div class="challenge"><b>🎯 Your task:</b> Create a string variable called name.</div><textarea id="answer-2" spellcheck="false">string name = &quot;Alex&quot;;</textarea><div class="actions"><button class="primary check" data-level="2">✓ Check my code</button><button class="secondary hintBtn" data-level="2">💡 Show hint</button></div><div class="feedback" id="feedback-2"></div><div class="hint" id="hint-2">💡 Write: string name = &quot;Alex&quot;;</div></article>
+      <aside><div class="card"><h3>🎯 Level goal</h3><p>Create a string variable called name.</p><div class="mini-bar"><i></i></div></div><div class="card"><h3>📚 You will learn</h3><ul><li>A variable is a named place for a value.</li><li>string means the value is text.</li><li>name is the variable name.</li><li>= assigns the text to the variable.</li></ul></div><div class="card"><h3>🐻 C# Buddy</h3><img class="big-bear" src="mascot.png" alt="C# Buddy"><p>Complete the exercise to unlock Level 4.</p></div></aside></div>
+      <div class="lesson-nav"><button class="secondary back">← All levels</button><button class="primary next" data-level="2">Next level →</button></div></section><section class="lesson" id="lesson-3" hidden>
+      <section class="hero compact"><div class="hero-art"><img src="mascot.png" alt="C# Buddy teddy bear"></div><div class="hero-copy"><span class="pill">LEVEL 4 OF 12</span><h1>Numbers</h1><p>Create an integer variable called score with the value 100.</p><div class="chips"><span class="chip">🌱 Beginner friendly</span><span class="chip">📖 Learn</span><span class="chip">🧩 Practice</span></div></div></section>
+      <div class="lesson-grid"><article class="card lesson-card"><div class="lesson-title"><span>4</span><div><h2>Store whole numbers</h2><p>Follow the steps, study the example, then complete the small challenge.</p></div></div>
+      <div class="buddy-tip"><img src="mascot.png" alt=""><div><b>🐻 C# Buddy says:</b><br>Read one step at a time. You do not need to memorize everything.</div></div>
+      <h3>1. Learn the idea</h3><div class="steps"><div class="step"><b>1</b><span>int is used for whole numbers.</span></div><div class="step"><b>2</b><span>Numbers do not need quotation marks.</span></div><div class="step"><b>3</b><span>A variable can be printed with Console.WriteLine.</span></div><div class="step"><b>4</b><span>Use a clear variable name.</span></div></div>
+      <h3>2. Worked example</h3><p class="muted">Here is a finished example.</p><div class="code-wrap"><button class="copy" data-copy="3">Copy</button><pre>int score = 100;
+Console.WriteLine(score);</pre></div>
+      <h3>3. Your challenge</h3><p class="muted">Write the code described below.</p><div class="challenge"><b>🎯 Your task:</b> Create an integer variable called score with the value 100.</div><textarea id="answer-3" spellcheck="false">int score = 100;</textarea><div class="actions"><button class="primary check" data-level="3">✓ Check my code</button><button class="secondary hintBtn" data-level="3">💡 Show hint</button></div><div class="feedback" id="feedback-3"></div><div class="hint" id="hint-3">💡 Write: int score = 100;</div></article>
+      <aside><div class="card"><h3>🎯 Level goal</h3><p>Create an integer variable called score with the value 100.</p><div class="mini-bar"><i></i></div></div><div class="card"><h3>📚 You will learn</h3><ul><li>int is used for whole numbers.</li><li>Numbers do not need quotation marks.</li><li>A variable can be printed with Console.WriteLine.</li><li>Use a clear variable name.</li></ul></div><div class="card"><h3>🐻 C# Buddy</h3><img class="big-bear" src="mascot.png" alt="C# Buddy"><p>Complete the exercise to unlock Level 5.</p></div></aside></div>
+      <div class="lesson-nav"><button class="secondary back">← All levels</button><button class="primary next" data-level="3">Next level →</button></div></section><section class="lesson" id="lesson-4" hidden>
+      <section class="hero compact"><div class="hero-art"><img src="mascot.png" alt="C# Buddy teddy bear"></div><div class="hero-copy"><span class="pill">LEVEL 5 OF 12</span><h1>Ask the User</h1><p>Ask for a name and store the answer.</p><div class="chips"><span class="chip">🌱 Beginner friendly</span><span class="chip">📖 Learn</span><span class="chip">🧩 Practice</span></div></div></section>
+      <div class="lesson-grid"><article class="card lesson-card"><div class="lesson-title"><span>5</span><div><h2>Read keyboard input</h2><p>Follow the steps, study the example, then complete the small challenge.</p></div></div>
+      <div class="buddy-tip"><img src="mascot.png" alt=""><div><b>🐻 C# Buddy says:</b><br>Read one step at a time. You do not need to memorize everything.</div></div>
+      <h3>1. Learn the idea</h3><div class="steps"><div class="step"><b>1</b><span>Console.Write asks the user a question.</span></div><div class="step"><b>2</b><span>Console.ReadLine waits for the user to type.</span></div><div class="step"><b>3</b><span>ReadLine gives you text.</span></div><div class="step"><b>4</b><span>Store that text in a string variable.</span></div></div>
+      <h3>2. Worked example</h3><p class="muted">Here is a finished example.</p><div class="code-wrap"><button class="copy" data-copy="4">Copy</button><pre>Console.Write(&quot;What is your name? &quot;);
+string name = Console.ReadLine() ?? &quot;&quot;;
+Console.WriteLine(&quot;Hello &quot; + name);</pre></div>
+      <h3>3. Your challenge</h3><p class="muted">Write the code described below.</p><div class="challenge"><b>🎯 Your task:</b> Ask for a name and store the answer.</div><textarea id="answer-4" spellcheck="false">Console.Write(&quot;What is your name? &quot;);
+string name = Console.ReadLine() ?? &quot;&quot;;</textarea><div class="actions"><button class="primary check" data-level="4">✓ Check my code</button><button class="secondary hintBtn" data-level="4">💡 Show hint</button></div><div class="feedback" id="feedback-4"></div><div class="hint" id="hint-4">💡 Use string name = Console.ReadLine() ?? &quot;&quot;;</div></article>
+      <aside><div class="card"><h3>🎯 Level goal</h3><p>Ask for a name and store the answer.</p><div class="mini-bar"><i></i></div></div><div class="card"><h3>📚 You will learn</h3><ul><li>Console.Write asks the user a question.</li><li>Console.ReadLine waits for the user to type.</li><li>ReadLine gives you text.</li><li>Store that text in a string variable.</li></ul></div><div class="card"><h3>🐻 C# Buddy</h3><img class="big-bear" src="mascot.png" alt="C# Buddy"><p>Complete the exercise to unlock Level 6.</p></div></aside></div>
+      <div class="lesson-nav"><button class="secondary back">← All levels</button><button class="primary next" data-level="4">Next level →</button></div></section><section class="lesson" id="lesson-5" hidden>
+      <section class="hero compact"><div class="hero-art"><img src="mascot.png" alt="C# Buddy teddy bear"></div><div class="hero-copy"><span class="pill">LEVEL 6 OF 12</span><h1>Make a Decision</h1><p>Tell the user whether a score is high or low.</p><div class="chips"><span class="chip">🌱 Beginner friendly</span><span class="chip">📖 Learn</span><span class="chip">🧩 Practice</span></div></div></section>
+      <div class="lesson-grid"><article class="card lesson-card"><div class="lesson-title"><span>6</span><div><h2>Use if and else</h2><p>Follow the steps, study the example, then complete the small challenge.</p></div></div>
+      <div class="buddy-tip"><img src="mascot.png" alt=""><div><b>🐻 C# Buddy says:</b><br>Read one step at a time. You do not need to memorize everything.</div></div>
+      <h3>1. Learn the idea</h3><div class="steps"><div class="step"><b>1</b><span>if checks a condition.</span></div><div class="step"><b>2</b><span>&gt;= means greater than or equal to.</span></div><div class="step"><b>3</b><span>else runs when the condition is false.</span></div><div class="step"><b>4</b><span>Code inside braces belongs to the if or else.</span></div></div>
+      <h3>2. Worked example</h3><p class="muted">Here is a finished example.</p><div class="code-wrap"><button class="copy" data-copy="5">Copy</button><pre>int score = 10;
+if (score &gt;= 10)
+{
+    Console.WriteLine(&quot;Great!&quot;);
+}
+else
+{
+    Console.WriteLine(&quot;Keep going!&quot;);
+}</pre></div>
+      <h3>3. Your challenge</h3><p class="muted">Write the code described below.</p><div class="challenge"><b>🎯 Your task:</b> Tell the user whether a score is high or low.</div><textarea id="answer-5" spellcheck="false">int score = 10;
+if (score &gt;= 10)
+{
+    Console.WriteLine(&quot;Great!&quot;);
+}
+else
+{
+    Console.WriteLine(&quot;Keep going!&quot;);
+}</textarea><div class="actions"><button class="primary check" data-level="5">✓ Check my code</button><button class="secondary hintBtn" data-level="5">💡 Show hint</button></div><div class="feedback" id="feedback-5"></div><div class="hint" id="hint-5">💡 Use if (score &gt;= 10) { ... } else { ... }</div></article>
+      <aside><div class="card"><h3>🎯 Level goal</h3><p>Tell the user whether a score is high or low.</p><div class="mini-bar"><i></i></div></div><div class="card"><h3>📚 You will learn</h3><ul><li>if checks a condition.</li><li>&gt;= means greater than or equal to.</li><li>else runs when the condition is false.</li><li>Code inside braces belongs to the if or else.</li></ul></div><div class="card"><h3>🐻 C# Buddy</h3><img class="big-bear" src="mascot.png" alt="C# Buddy"><p>Complete the exercise to unlock Level 7.</p></div></aside></div>
+      <div class="lesson-nav"><button class="secondary back">← All levels</button><button class="primary next" data-level="5">Next level →</button></div></section><section class="lesson" id="lesson-6" hidden>
+      <section class="hero compact"><div class="hero-art"><img src="mascot.png" alt="C# Buddy teddy bear"></div><div class="hero-copy"><span class="pill">LEVEL 7 OF 12</span><h1>Repeat With a Loop</h1><p>Print the numbers 1 through 5 using a for loop.</p><div class="chips"><span class="chip">🌱 Beginner friendly</span><span class="chip">📖 Learn</span><span class="chip">🧩 Practice</span></div></div></section>
+      <div class="lesson-grid"><article class="card lesson-card"><div class="lesson-title"><span>7</span><div><h2>Repeat code five times</h2><p>Follow the steps, study the example, then complete the small challenge.</p></div></div>
+      <div class="buddy-tip"><img src="mascot.png" alt=""><div><b>🐻 C# Buddy says:</b><br>Read one step at a time. You do not need to memorize everything.</div></div>
+      <h3>1. Learn the idea</h3><div class="steps"><div class="step"><b>1</b><span>A loop repeats instructions.</span></div><div class="step"><b>2</b><span>int i = 1 sets the starting number.</span></div><div class="step"><b>3</b><span>i &lt;= 5 keeps the loop running through 5.</span></div><div class="step"><b>4</b><span>i++ adds 1 after each round.</span></div></div>
+      <h3>2. Worked example</h3><p class="muted">Here is a finished example.</p><div class="code-wrap"><button class="copy" data-copy="6">Copy</button><pre>for (int i = 1; i &lt;= 5; i++)
+{
+    Console.WriteLine(i);
+}</pre></div>
+      <h3>3. Your challenge</h3><p class="muted">Write the code described below.</p><div class="challenge"><b>🎯 Your task:</b> Print the numbers 1 through 5 using a for loop.</div><textarea id="answer-6" spellcheck="false">for (int i = 1; i &lt;= 5; i++)
+{
+    Console.WriteLine(i);
+}</textarea><div class="actions"><button class="primary check" data-level="6">✓ Check my code</button><button class="secondary hintBtn" data-level="6">💡 Show hint</button></div><div class="feedback" id="feedback-6"></div><div class="hint" id="hint-6">💡 Use for (int i = 1; i &lt;= 5; i++)</div></article>
+      <aside><div class="card"><h3>🎯 Level goal</h3><p>Print the numbers 1 through 5 using a for loop.</p><div class="mini-bar"><i></i></div></div><div class="card"><h3>📚 You will learn</h3><ul><li>A loop repeats instructions.</li><li>int i = 1 sets the starting number.</li><li>i &lt;= 5 keeps the loop running through 5.</li><li>i++ adds 1 after each round.</li></ul></div><div class="card"><h3>🐻 C# Buddy</h3><img class="big-bear" src="mascot.png" alt="C# Buddy"><p>Complete the exercise to unlock Level 8.</p></div></aside></div>
+      <div class="lesson-nav"><button class="secondary back">← All levels</button><button class="primary next" data-level="6">Next level →</button></div></section><section class="lesson" id="lesson-7" hidden>
+      <section class="hero compact"><div class="hero-art"><img src="mascot.png" alt="C# Buddy teddy bear"></div><div class="hero-copy"><span class="pill">LEVEL 8 OF 12</span><h1>Build a Method</h1><p>Create a method named Greet that accepts a name.</p><div class="chips"><span class="chip">🌱 Beginner friendly</span><span class="chip">📖 Learn</span><span class="chip">🧩 Practice</span></div></div></section>
+      <div class="lesson-grid"><article class="card lesson-card"><div class="lesson-title"><span>8</span><div><h2>Create reusable code</h2><p>Follow the steps, study the example, then complete the small challenge.</p></div></div>
+      <div class="buddy-tip"><img src="mascot.png" alt=""><div><b>🐻 C# Buddy says:</b><br>Read one step at a time. You do not need to memorize everything.</div></div>
+      <h3>1. Learn the idea</h3><div class="steps"><div class="step"><b>1</b><span>A method is a named group of instructions.</span></div><div class="step"><b>2</b><span>void means it does not return a value.</span></div><div class="step"><b>3</b><span>name is a parameter that receives text.</span></div><div class="step"><b>4</b><span>Call the method later to reuse it.</span></div></div>
+      <h3>2. Worked example</h3><p class="muted">Here is a finished example.</p><div class="code-wrap"><button class="copy" data-copy="7">Copy</button><pre>static void Greet(string name)
+{
+    Console.WriteLine(&quot;Hello &quot; + name);
+}
 
-<div class="layout">
-  <aside class="sidebar">
-    <nav class="main-nav">
-      <button class="home-btn" id="homeBtn">⌂ <span>Course Home</span></button>
-      <h3>YOUR LEVELS</h3>
-      <div id="levelNav"></div>
-      <h3 class="more">PRACTICE</h3>
-      <button id="practiceBtn" class="side-link">⌘ <span>Practice Zone</span></button>
-      <button id="projectBtn" class="side-link">🎮 <span>Final Project</span></button>
-      <h3 class="more">MORE</h3>
-      <button class="side-link">📖 <span>C# Cheat Sheet</span></button>
-      <button class="side-link">⚙ <span>Settings</span></button>
-    </nav>
-    <div class="sidebar-buddy">
-      <img src="mascot.png" alt="C# Buddy teddy bear">
-      <div><b id="sideMessage">Let's learn!</b><small>One level at a time ♥</small></div>
-    </div>
-  </aside>
-
-  <main id="main">
-    <section id="courseHome" class="home-screen"></section>
-    <section id="levelScreen" hidden></section>
-  </main>
-</div>
-<script src="script.js"></script>
-</body>
-</html>
+Greet(&quot;Sam&quot;);</pre></div>
+      <h3>3. Your challenge</h3><p class="muted">Write the code described below.</p><div class="challenge"><b>🎯 Your task:</b> Create a method named Greet that accepts a name.</div><textarea id="answer-7" spellcheck="false">static void Greet(string name)
+{
+    Console.WriteLine(&quot;Hello &quot; + name);
+}</textarea><div class="actions"><button class="primary check" data-level="7">✓ Check my code</button><button class="secondary hintBtn" data-level="7">💡 Show hint</button></div><div class="feedback" id="feedback-7"></div><div class="hint" id="hint-7">💡 Start with static void Greet(string name) { ... }</div></article>
+      <aside><div class="card"><h3>🎯 Level goal</h3><p>Create a method named Greet that accepts a name.</p><div class="mini-bar"><i></i></div></div><div class="card"><h3>📚 You will learn</h3><ul><li>A method is a named group of instructions.</li><li>void means it does not return a value.</li><li>name is a parameter that receives text.</li><li>Call the method later to reuse it.</li></ul></div><div class="card"><h3>🐻 C# Buddy</h3><img class="big-bear" src="mascot.png" alt="C# Buddy"><p>Complete the exercise to unlock Level 9.</p></div></aside></div>
+      <div class="lesson-nav"><button class="secondary back">← All levels</button><button class="primary next" data-level="7">Next level →</button></div></section><section class="lesson" id="lesson-8" hidden>
+      <section class="hero compact"><div class="hero-art"><img src="mascot.png" alt="C# Buddy teddy bear"></div><div class="hero-copy"><span class="pill">LEVEL 9 OF 12</span><h1>Collections</h1><p>Create an array containing Red, Green, and Blue.</p><div class="chips"><span class="chip">🌱 Beginner friendly</span><span class="chip">📖 Learn</span><span class="chip">🧩 Practice</span></div></div></section>
+      <div class="lesson-grid"><article class="card lesson-card"><div class="lesson-title"><span>9</span><div><h2>Store several values</h2><p>Follow the steps, study the example, then complete the small challenge.</p></div></div>
+      <div class="buddy-tip"><img src="mascot.png" alt=""><div><b>🐻 C# Buddy says:</b><br>Read one step at a time. You do not need to memorize everything.</div></div>
+      <h3>1. Learn the idea</h3><div class="steps"><div class="step"><b>1</b><span>An array stores multiple values of the same type.</span></div><div class="step"><b>2</b><span>string[] means an array of strings.</span></div><div class="step"><b>3</b><span>Values are separated with commas.</span></div><div class="step"><b>4</b><span>You can loop through an array later.</span></div></div>
+      <h3>2. Worked example</h3><p class="muted">Here is a finished example.</p><div class="code-wrap"><button class="copy" data-copy="8">Copy</button><pre>string[] colors = { &quot;Red&quot;, &quot;Green&quot;, &quot;Blue&quot; };
+foreach (string color in colors)
+{
+    Console.WriteLine(color);
+}</pre></div>
+      <h3>3. Your challenge</h3><p class="muted">Write the code described below.</p><div class="challenge"><b>🎯 Your task:</b> Create an array containing Red, Green, and Blue.</div><textarea id="answer-8" spellcheck="false">string[] colors = { &quot;Red&quot;, &quot;Green&quot;, &quot;Blue&quot; };</textarea><div class="actions"><button class="primary check" data-level="8">✓ Check my code</button><button class="secondary hintBtn" data-level="8">💡 Show hint</button></div><div class="feedback" id="feedback-8"></div><div class="hint" id="hint-8">💡 Use string[] colors = { &quot;Red&quot;, &quot;Green&quot;, &quot;Blue&quot; };</div></article>
+      <aside><div class="card"><h3>🎯 Level goal</h3><p>Create an array containing Red, Green, and Blue.</p><div class="mini-bar"><i></i></div></div><div class="card"><h3>📚 You will learn</h3><ul><li>An array stores multiple values of the same type.</li><li>string[] means an array of strings.</li><li>Values are separated with commas.</li><li>You can loop through an array later.</li></ul></div><div class="card"><h3>🐻 C# Buddy</h3><img class="big-bear" src="mascot.png" alt="C# Buddy"><p>Complete the exercise to unlock Level 10.</p></div></aside></div>
+      <div class="lesson-nav"><button class="secondary back">← All levels</button><button class="primary next" data-level="8">Next level →</button></div></section><section class="lesson" id="lesson-9" hidden>
+      <section class="hero compact"><div class="hero-art"><img src="mascot.png" alt="C# Buddy teddy bear"></div><div class="hero-copy"><span class="pill">LEVEL 10 OF 12</span><h1>Classes</h1><p>Create a Player class with a Name property.</p><div class="chips"><span class="chip">🌱 Beginner friendly</span><span class="chip">📖 Learn</span><span class="chip">🧩 Practice</span></div></div></section>
+      <div class="lesson-grid"><article class="card lesson-card"><div class="lesson-title"><span>10</span><div><h2>Make an object blueprint</h2><p>Follow the steps, study the example, then complete the small challenge.</p></div></div>
+      <div class="buddy-tip"><img src="mascot.png" alt=""><div><b>🐻 C# Buddy says:</b><br>Read one step at a time. You do not need to memorize everything.</div></div>
+      <h3>1. Learn the idea</h3><div class="steps"><div class="step"><b>1</b><span>A class is a blueprint for objects.</span></div><div class="step"><b>2</b><span>A property stores information on an object.</span></div><div class="step"><b>3</b><span>public makes the property accessible.</span></div><div class="step"><b>4</b><span>get and set allow reading and changing it.</span></div></div>
+      <h3>2. Worked example</h3><p class="muted">Here is a finished example.</p><div class="code-wrap"><button class="copy" data-copy="9">Copy</button><pre>class Player
+{
+    public string Name { get; set; }
+}</pre></div>
+      <h3>3. Your challenge</h3><p class="muted">Write the code described below.</p><div class="challenge"><b>🎯 Your task:</b> Create a Player class with a Name property.</div><textarea id="answer-9" spellcheck="false">class Player
+{
+    public string Name { get; set; }
+}</textarea><div class="actions"><button class="primary check" data-level="9">✓ Check my code</button><button class="secondary hintBtn" data-level="9">💡 Show hint</button></div><div class="feedback" id="feedback-9"></div><div class="hint" id="hint-9">💡 Write class Player { public string Name { get; set; } }</div></article>
+      <aside><div class="card"><h3>🎯 Level goal</h3><p>Create a Player class with a Name property.</p><div class="mini-bar"><i></i></div></div><div class="card"><h3>📚 You will learn</h3><ul><li>A class is a blueprint for objects.</li><li>A property stores information on an object.</li><li>public makes the property accessible.</li><li>get and set allow reading and changing it.</li></ul></div><div class="card"><h3>🐻 C# Buddy</h3><img class="big-bear" src="mascot.png" alt="C# Buddy"><p>Complete the exercise to unlock Level 11.</p></div></aside></div>
+      <div class="lesson-nav"><button class="secondary back">← All levels</button><button class="primary next" data-level="9">Next level →</button></div></section><section class="lesson" id="lesson-10" hidden>
+      <section class="hero compact"><div class="hero-art"><img src="mascot.png" alt="C# Buddy teddy bear"></div><div class="hero-copy"><span class="pill">LEVEL 11 OF 12</span><h1>Handle Errors</h1><p>Handle invalid number input with try/catch.</p><div class="chips"><span class="chip">🌱 Beginner friendly</span><span class="chip">📖 Learn</span><span class="chip">🧩 Practice</span></div></div></section>
+      <div class="lesson-grid"><article class="card lesson-card"><div class="lesson-title"><span>11</span><div><h2>Use try and catch</h2><p>Follow the steps, study the example, then complete the small challenge.</p></div></div>
+      <div class="buddy-tip"><img src="mascot.png" alt=""><div><b>🐻 C# Buddy says:</b><br>Read one step at a time. You do not need to memorize everything.</div></div>
+      <h3>1. Learn the idea</h3><div class="steps"><div class="step"><b>1</b><span>Some operations can fail.</span></div><div class="step"><b>2</b><span>try contains code that might cause an error.</span></div><div class="step"><b>3</b><span>catch handles the error.</span></div><div class="step"><b>4</b><span>FormatException is common when text is not a valid number.</span></div></div>
+      <h3>2. Worked example</h3><p class="muted">Here is a finished example.</p><div class="code-wrap"><button class="copy" data-copy="10">Copy</button><pre>try
+{
+    int age = int.Parse(Console.ReadLine() ?? &quot;0&quot;);
+}
+catch (FormatException)
+{
+    Console.WriteLine(&quot;Please enter a number.&quot;);
+}</pre></div>
+      <h3>3. Your challenge</h3><p class="muted">Write the code described below.</p><div class="challenge"><b>🎯 Your task:</b> Handle invalid number input with try/catch.</div><textarea id="answer-10" spellcheck="false">try
+{
+    int age = int.Parse(Console.ReadLine() ?? &quot;0&quot;);
+}
+catch (FormatException)
+{
+    Console.WriteLine(&quot;Please enter a number.&quot;);
+}</textarea><div class="actions"><button class="primary check" data-level="10">✓ Check my code</button><button class="secondary hintBtn" data-level="10">💡 Show hint</button></div><div class="feedback" id="feedback-10"></div><div class="hint" id="hint-10">💡 Use try { ... } catch (FormatException) { ... }</div></article>
+      <aside><div class="card"><h3>🎯 Level goal</h3><p>Handle invalid number input with try/catch.</p><div class="mini-bar"><i></i></div></div><div class="card"><h3>📚 You will learn</h3><ul><li>Some operations can fail.</li><li>try contains code that might cause an error.</li><li>catch handles the error.</li><li>FormatException is common when text is not a valid number.</li></ul></div><div class="card"><h3>🐻 C# Buddy</h3><img class="big-bear" src="mascot.png" alt="C# Buddy"><p>Complete the exercise to unlock Level 12.</p></div></aside></div>
+      <div class="lesson-nav"><button class="secondary back">← All levels</button><button class="primary next" data-level="10">Next level →</button></div></section><section class="lesson" id="lesson-11" hidden>
+      <section class="hero compact"><div class="hero-art"><img src="mascot.png" alt="C# Buddy teddy bear"></div><div class="hero-copy"><span class="pill">LEVEL 12 OF 12</span><h1>Final Project</h1><p>Combine variables, input, a loop, and if/else into a number guessing game.</p><div class="chips"><span class="chip">🌱 Beginner friendly</span><span class="chip">📖 Learn</span><span class="chip">🧩 Practice</span></div></div></section>
+      <div class="lesson-grid"><article class="card lesson-card"><div class="lesson-title"><span>12</span><div><h2>Build a guessing game</h2><p>Follow the steps, study the example, then complete the small challenge.</p></div></div>
+      <div class="buddy-tip"><img src="mascot.png" alt=""><div><b>🐻 C# Buddy says:</b><br>Read one step at a time. You do not need to memorize everything.</div></div>
+      <h3>1. Learn the idea</h3><div class="steps"><div class="step"><b>1</b><span>Set a secret number such as 7.</span></div><div class="step"><b>2</b><span>Ask the player for a guess with Console.ReadLine.</span></div><div class="step"><b>3</b><span>Keep asking while the guess is not correct.</span></div><div class="step"><b>4</b><span>Use if/else to say too low, too high, or correct.</span></div></div>
+      <h3>2. Worked example</h3><p class="muted">Here is a finished example.</p><div class="code-wrap"><button class="copy" data-copy="11">Copy</button><pre>int secret = 7;
+int guess = 0;
+while (guess != secret)
+{
+    Console.Write(&quot;Guess: &quot;);
+    guess = int.Parse(Console.ReadLine() ?? &quot;0&quot;);
+    if (guess &lt; secret) Console.WriteLine(&quot;Too low!&quot;);
+    else if (guess &gt; secret) Console.WriteLine(&quot;Too high!&quot;);
+    else Console.WriteLine(&quot;Correct!&quot;);
+}</pre></div>
+      <h3>3. Your challenge</h3><p class="muted">Write the code described below.</p><div class="challenge"><b>🎯 Your task:</b> Combine variables, input, a loop, and if/else into a number guessing game.</div><textarea id="answer-11" spellcheck="false">int secret = 7;
+int guess = 0;
+// Add the guessing loop</textarea><div class="actions"><button class="primary check" data-level="11">✓ Check my code</button><button class="secondary hintBtn" data-level="11">💡 Show hint</button></div><div class="feedback" id="feedback-11"></div><div class="hint" id="hint-11">💡 You need while, Console.ReadLine, and if/else comparisons.</div></article>
+      <aside><div class="card"><h3>🎯 Level goal</h3><p>Combine variables, input, a loop, and if/else into a number guessing game.</p><div class="mini-bar"><i></i></div></div><div class="card"><h3>📚 You will learn</h3><ul><li>Set a secret number such as 7.</li><li>Ask the player for a guess with Console.ReadLine.</li><li>Keep asking while the guess is not correct.</li><li>Use if/else to say too low, too high, or correct.</li></ul></div><div class="card"><h3>🐻 C# Buddy</h3><img class="big-bear" src="mascot.png" alt="C# Buddy"><p>Complete the exercise to unlock Level 12.</p></div></aside></div>
+      <div class="lesson-nav"><button class="secondary back">← All levels</button><button class="primary next" data-level="11">🏆 Finish course</button></div></section></main></div><script src="script.js"></script></body></html>
